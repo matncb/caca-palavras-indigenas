@@ -83,7 +83,7 @@
     */
 
     // Game state
-    var startSquare, selectedSquares = [], curOrientation, curWord = '';
+    var startSquare, selectedSquares = [], curOrientation, curWord = '', statusDone;
 
     /**
     * Event that handles mouse down on a new square. Initializes the game state
@@ -95,6 +95,7 @@
       startSquare = this;
       selectedSquares.push(this);
       curWord = $(this).text();
+      status = false;
     };
 
 
@@ -224,6 +225,7 @@
 
         if (wordList.length === 0) {
           $('.puzzleSquare').addClass('complete');
+          statusDone = true;
         }
       }
 
@@ -233,6 +235,7 @@
       selectedSquares = [];
       curWord = '';
       curOrientation = null;
+
     };
 
     /**
@@ -326,7 +329,17 @@
           }
         }
 
-      }
+      },
+
+      /**
+      * Final  puzzle.
+      *
+      */
+     done: function() {
+      return statusDone;
+     }
+
+
     };
   };
 
