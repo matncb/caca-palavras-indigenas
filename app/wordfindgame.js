@@ -74,7 +74,7 @@
 
 
       output += '<div class="div-title">';
-      output += '<p>Lista de palavras</p>';
+      output += '<p></p>';
       output += '</div>';
 
       output += '<div class="div-heading">';
