@@ -40,8 +40,18 @@
   
           var words = [
             
-            'Sustentabilidade'
-            //'combinação', 'mudanças', 'Alimentos', 'orgânicos', 'rentável', 'agrícolas', 
+            'Sustentabilidade', 'combinação', 'mudanças', 'Alimentos', 'orgânicos', 'rentável', 'agrícolas'
+            //'ciclodevida', 'riscos', 'poluição', 'impactos', 'energia', 'Habilidade', 'Ecoeficiência', 'Lucro', 'Pessoas',
+            //'Planeta', 'Equidade', 'Modelo', 'Pressões', 'Eficiência', 'Responsabilidade', 'Planodeação',
+            //'Gestão', 'preservação', 'empreendedor', 'Comprometimento', 'sociedade', 'mídia', 'governo',
+            //'comunidade', 'estratégia', 'transparente', 'qualidadedevida' , 'públicos', 'socialmente',
+            //'legislação', 'necessidades', 'áreassocial', 'reutilização', 'reciclagem', 'suprimentos',
+            //'departamento', 'nicho', 'Governos', 'Sociedade', 'metas', 'MeioAmbiente'
+            ];
+
+           var translates = [
+            
+            'traducao1', 'traducao2', 'traducao3', 'traducao4', 'traducao5', 'traducao6', 'traducao7' 
             //'ciclodevida', 'riscos', 'poluição', 'impactos', 'energia', 'Habilidade', 'Ecoeficiência', 'Lucro', 'Pessoas',
             //'Planeta', 'Equidade', 'Modelo', 'Pressões', 'Eficiência', 'Responsabilidade', 'Planodeação',
             //'Gestão', 'preservação', 'empreendedor', 'Comprometimento', 'sociedade', 'mídia', 'governo',
@@ -51,7 +61,7 @@
             ];
 
           // start a word find game
-          var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
+          var gamePuzzle = wordfindgame.create(words, translates, '#puzzle', '#words');
 
           $('#solve').click( function() {
             wordfindgame.solve(gamePuzzle, words);

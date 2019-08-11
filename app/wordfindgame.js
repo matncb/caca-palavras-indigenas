@@ -61,12 +61,12 @@
     * @param {String} el: The jQuery element to write the words to
     * @param {[String]} words: The words to draw
     */
-    var drawWords = function (el, words) {
+    var drawWords = function (el, words, translates) {
       
       var output = '<ul>';
       for (var i = 0, len = words.length; i < len; i++) {
         var word = words[i];
-        output += '<li class="word ' + word + '">' + word;
+        output += '<li class="word ' + word + '">' + '<label>' + word +  '->' + translates[i] + '</label>';
       }
       output += '</ul>';
 
@@ -269,11 +269,12 @@
       * Returns the puzzle that was created.
       *
       * @param {[String]} words: The words to add to the puzzle
+      * @param {[String]} translates: The words to add to translate
       * @param {String} puzzleEl: Selector to use when inserting the puzzle
       * @param {String} wordsEl: Selector to use when inserting the word list
       * @param {Options} options: WordFind options to use when creating the puzzle
       */
-      create: function(words, puzzleEl, wordsEl, options) {
+      create: function(words, translates, puzzleEl, wordsEl, options) {
         
         wordList = words.slice(0).sort();
 
@@ -281,7 +282,7 @@
 
         // draw out all of the words
         drawPuzzle(puzzleEl, puzzle);
-        drawWords(wordsEl, wordList);
+        drawWords(wordsEl, wordList, translates);
 
         // attach events to the buttons
         // optimistically add events for windows 8 touch
