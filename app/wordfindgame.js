@@ -63,12 +63,33 @@
     */
     var drawWords = function (el, words, translates) {
       
-      var output = '<ul>';
+      //var output = '<ul>';
+      //for (var i = 0, len = words.length; i < len; i++) {
+      //  var word = words[i];
+      //  output += '<li class="word ' + word + '">' + '<label>' + word +  '->' + translates[i] + '</label>';
+      //}
+      //output += '</ul>';
+
+     var output = '<div class= "div-table">';
+
+
+      output += '<div class="div-title">';
+      output += '<p></p>';
+      output += '</div>';
+
+      output += '<div class="div-heading">';
+      output += '<div class="div-cell"><strong>Palavra</strong></div>'
+      output += '<div class="div-cell"><strong>Tradução</strong></div>'
+      output += '</div>';
       for (var i = 0, len = words.length; i < len; i++) {
         var word = words[i];
-        output += '<li class="word ' + word + '">' + '<label>' + word +  '->' + translates[i] + '</label>';
+        output += '<div class="div-row">' 
+        output += '<div class="div-cell word ' + word + '">' + word + '</div>';
+        output += '<div class="div-cell">' + translates[i] + '</div>';
+        output += '</div>';
       }
-      output += '</ul>';
+      output += '</div>';
+
 
       $(el).html(output);
     };
@@ -276,7 +297,9 @@
       */
       create: function(words, translates, puzzleEl, wordsEl, options) {
         
-        wordList = words.slice(0).sort();
+        //wordList = words.slice(0).sort();
+
+        wordList = words;
 
         var puzzle = wordfind.newPuzzle(words, options);
 

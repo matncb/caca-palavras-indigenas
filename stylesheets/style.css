@@ -16,9 +16,10 @@ p {
 */
 #puzzle {
   border: 1px solid black;
-  padding: 20px;
+  padding: 10px;
   float: left;
   margin: 30px 20px;
+  background-color: black;
 }
 
 #puzzle div {
@@ -28,12 +29,12 @@ p {
 
 /* style for each square in the puzzle */
 #puzzle .puzzleSquare {
-  height: 30px;
-  width: 30px;
+  height: 45px;
+  width: 45px;
   text-transform: uppercase;
   background-color: white;
   border: 0;
-  font: 1em sans-serif;
+  font: 1.3em sans-serif;
 }
 
 button::-moz-focus-inner {
@@ -47,18 +48,20 @@ button::-moz-focus-inner {
 
 /* indicates that the square is part of a word that has been found */
 #puzzle .found {
-  background-color: green;
+  background-color: Green;
   color: white;
+  opacity: 4;
 }
 
 #puzzle .solved {
-  background-color: purple;
-  color: white;
+  background-color: none;
+  color: none;	
 }
 
 /* indicates that all words have been found */
 #puzzle .complete {
-  background-color: green;
+  background-color: Green;
+  opacity: 4;
 }
 
 /**
@@ -106,19 +109,69 @@ button::-moz-focus-inner {
 .button {
   background-color: #4CAF50;
   color: white;
-  padding: 15px 40px;
-  width: 100%;
+  width: 25%;
+  height: 60px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 20px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  position: fixed;
+}	
+
+#objetivo{
+	bottom: 400px;
+}
+#jogar{
+	bottom: 470px;
+}
+
+#inicial{
+	bottom:180px;
+}
+
+.buttonlvl1{
+	bottom:235px;
 }
 
 .button:hover {
   background-color: rgb(76, 119, 175); /* Green */
   color: white;
 }
+
+
+.div-table
+ {
+   display: table;
+   background-color: #eee;         
+   border-spacing: 1px; 
+ }
+ .div-title
+ {
+   display: table-caption;
+   text-align: center;
+   font-weight: bold;
+   font-size: larger;
+}
+.div-heading
+{
+   display: table-row;
+   font-weight: bold;
+   text-align: center;
+   background-color: rgb(187, 184, 184);  
+}
+.div-row
+{
+   display: table-row;
+}
+.div-cell
+{
+   display: table-cell;
+   border: solid;
+   border-width: thin;
+   padding-left: 5px;
+   padding-right: 5px;
+   width: 200px;         
+ }
+
