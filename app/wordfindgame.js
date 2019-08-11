@@ -61,12 +61,12 @@
     * @param {String} el: The jQuery element to write the words to
     * @param {[String]} words: The words to draw
     */
-    var drawWords = function (el, words) {
+    var drawWords = function (el, words, translates) {
       
       var output = '<ul>';
       for (var i = 0, len = words.length; i < len; i++) {
         var word = words[i];
-        output += '<li class="word ' + word + '">' + '<label>' + word +  '->teste </label>';
+        output += '<li class="word ' + word + '">' + '<label>' + word +  '->' + translates[i] + '</label>';
       }
       output += '</ul>';
 
@@ -282,7 +282,7 @@
 
         // draw out all of the words
         drawPuzzle(puzzleEl, puzzle);
-        drawWords(wordsEl, wordList);
+        drawWords(wordsEl, wordList, translates);
 
         // attach events to the buttons
         // optimistically add events for windows 8 touch
