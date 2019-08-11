@@ -121,18 +121,18 @@ button::-moz-focus-inner {
 }	
 
 #objetivo{
-	bottom: 400px;
+	bottom: 45%;
 }
 #jogar{
-	bottom: 470px;
+	bottom: 52%;
 }
 
 #inicial{
-	bottom:180px;
+	bottom:20%;
 }
 
 .buttonlvl1{
-	bottom:235px;
+	bottom:27%;
 }
 
 .button:hover {
