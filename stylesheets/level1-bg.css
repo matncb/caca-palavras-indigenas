@@ -1,0 +1,6 @@
+body{
+	background-color: lightblue;
+	background-image: url('../bg/aldeia.jpeg');
+	background-size: cover;
+	background-position: absolute;
+}

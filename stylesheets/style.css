@@ -121,3 +121,39 @@ button::-moz-focus-inner {
   background-color: rgb(76, 119, 175); /* Green */
   color: white;
 }
+
+
+.div-table
+ {
+   display: table;
+   background-color: #eee;         
+   border-spacing: 1px; 
+ }
+ .div-title
+ {
+   display: table-caption;
+   text-align: center;
+   font-weight: bold;
+   font-size: larger;
+}
+.div-heading
+{
+   display: table-row;
+   font-weight: bold;
+   text-align: center;
+   background-color: rgb(187, 184, 184);  
+}
+.div-row
+{
+   display: table-row;
+}
+.div-cell
+{
+   display: table-cell;
+   border: solid;
+   border-width: thin;
+   padding-left: 5px;
+   padding-right: 5px;
+   width: 200px;         
+ }
+
