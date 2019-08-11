@@ -297,7 +297,9 @@
       */
       create: function(words, translates, puzzleEl, wordsEl, options) {
         
-        wordList = words.slice(0).sort();
+        //wordList = words.slice(0).sort();
+
+        wordList = words;
 
         var puzzle = wordfind.newPuzzle(words, options);
 
