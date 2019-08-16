@@ -122,7 +122,15 @@ button::-moz-focus-inner {
 }	
 
 #objetivo{
-	bottom: -20px;
+  bottom: -20px;
+
+}
+
+ #obj{
+
+  bottom: -300px;
+ }
+
 }
 #jogar{
 	bottom: 40%;

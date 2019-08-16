@@ -3,4 +3,5 @@ body{
 	background-image: url('../bg/aldeia.png');
 	background-size: cover;
 	background-position: absolute;
+     overflow: none;
 }
