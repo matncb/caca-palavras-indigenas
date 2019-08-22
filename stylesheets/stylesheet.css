@@ -236,4 +236,7 @@ a {
   .site-footer {
     font-size: 0.9rem; } }
 
-
+ div.t {
+      line-height: 1;
+      
+}

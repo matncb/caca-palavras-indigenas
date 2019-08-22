@@ -128,8 +128,16 @@ button::-moz-focus-inner {
 
  #obj{
 
-  bottom: -300px;
+  bottom: -350px;
  }
+
+ #txt{
+  text-align: justify;
+  background-color: blanchedalmond;
+  
+  
+}
+
 
 }
 #jogar{
