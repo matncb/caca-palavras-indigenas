@@ -1,0 +1,7 @@
+body{
+	background-color: lightblue;
+	background-image: url('../bg/vila.jpg');
+	background-size: cover;
+	background-position: absolute;
+     overflow: none;
+}
