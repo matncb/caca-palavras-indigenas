@@ -137,6 +137,12 @@ button::-moz-focus-inner {
   
   
 }
+#ref{
+
+bottom: -40px
+
+}
+
 
 #jogar{
 	bottom: 40%;
