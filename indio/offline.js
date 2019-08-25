@@ -1,0 +1,30 @@
+﻿{
+	"version": 1566771736,
+	"fileList": [
+		"data.js",
+		"c2runtime.js",
+		"jquery-2.1.1.min.js",
+		"offlineClient.js",
+		"images/indio-sheet0.png",
+		"images/sprite-sheet0.png",
+		"images/fundocastro.png",
+		"images/sprite2-sheet0.png",
+		"images/sprite3-sheet0.png",
+		"images/tiledsprite-sheet0.png",
+		"images/plataforma-sheet0.png",
+		"images/vida-sheet0.png",
+		"images/vida-sheet1.png",
+		"images/fundocastro3.png",
+		"images/fundocastro4.png",
+		"images/plataformacidadefase4-sheet0.png",
+		"images/tiledsprite2-sheet0.png",
+		"images/ningligapvc-sheet0.png",
+		"images/ningliga2-sheet0.png",
+		"icon-16.png",
+		"icon-32.png",
+		"icon-114.png",
+		"icon-128.png",
+		"icon-256.png",
+		"loading-logo.png"
+	]
+}
