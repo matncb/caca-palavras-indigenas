@@ -128,7 +128,7 @@ button::-moz-focus-inner {
 
  #obj{
 
-  bottom: -350px;
+  bottom: -375px;
  }
 
  #txt{
@@ -143,7 +143,10 @@ bottom: -40px
 
 }
 
-
+p {
+  line-height: 200%;
+ }
+ 
 #jogar{
 	bottom: 40%;
 }
